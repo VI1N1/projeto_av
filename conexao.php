@@ -11,11 +11,11 @@
 	
 	$host_ip = $_SERVER['HTTP_HOST'];
 	
-	$url = "http://".$host_ip."/portal";
+	$url = "http://".$host_ip."/portal_av";
 
-	$url_admin = "http://".$host_ip."/portal/admin";
+	$url_admin = "http://".$host_ip."/portal_av/admin";
 
-	$url_aluno = "http://".$host_ip."portal/aluno";
+	$url_aluno = "http://".$host_ip."/portal_av/aluno";
 
 
 ?>

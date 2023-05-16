@@ -15,6 +15,10 @@ CREATE TABLE `login` (
   `tipo_login` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `login` (`codigo_login`, `nome_completo_login`, `nome_login`, `senha_login`, `tipo_login`) VALUES
+(1, 'Administrador', 'admin', '202cb962ac59075b964b07152d234b70', 0),
+(2, 'Aluno', 'aluno', '202cb962ac59075b964b07152d234b70', 1);
+
 CREATE TABLE `usuario` (
   `codigo_usuario` int(11) NOT NULL,
   `nome_usuario` varchar(100) NOT NULL,
@@ -29,6 +33,9 @@ CREATE TABLE `veiculo` (
   `descricao_veiculo` varchar(200) NOT NULL,
   `ano_veiculo` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `veiculo` (`codigo_veiculo`, `marca_veiculo`, `modelo_veiculo`,`descricao_veiculo`,`ano_veiculo`) VALUES
+(1, 'Honda', 'N/A', 'Não há nada ainda', 2003);
 
 CREATE TABLE `vendedor` (
   `codigo_vendedor` int(11) NOT NULL,
@@ -70,12 +77,8 @@ ALTER TABLE `vendedor`
   MODIFY `codigo_vendedor` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
-INSERT INTO `veiculo` (`codigo_veiculo`, `marca_veiculo`, `modelo_veiculo`,`descricao_veiculo`,`ano_veiculo`) VALUES
-(1, 'Honda', 'N/A', 'Não há nada ainda', 2003);
 
-INSERT INTO `login` (`codigo_login`, `nome_completo_login`, `nome_login`, `senha_login`, `tipo_login`) VALUES
-(1, 'Administrador', 'admin', '202cb962ac59075b964b07152d234b70', 0),
-(2, 'Aluno', 'aluno', '202cb962ac59075b964b07152d234b70', 1);
+
 
 
 

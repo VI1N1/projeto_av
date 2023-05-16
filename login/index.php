@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<form id="form_login" name="form_login" class="form_login" method="post" action="valida_login.php">
+		<form id="form_login" name="form_login" class="form_login" method="post" action="../valida_login.php">
 				<div class="agrupamento_login">
 					<div>
 						<div>

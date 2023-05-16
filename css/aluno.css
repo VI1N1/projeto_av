@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #999;
+}
+html{
+	font-size: 62.5%;
+}
+
+.form_login{
+	width: 1000px;
+	margin: 4rem auto;
+}
+
+h1{
+	font-size: 4rem;
+	margin-bottom: 2.5rem;
+	color: #00008B;
+}
+
+.agrupamento_login{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #00008B;
+	padding: 5rem;
+	border-radius: 8px;
+	box-shadow: 0px 1px 10px #00008B;
+}
+
+label, input[type="text"], input[type="password"],input[type="submit"]{
+
+	font-size: 1.5rem;
+
+}
+
+input[type="text"], 
+input[type="time"]{
+	width: 300px;
+	padding: 1.0rem;
+	margin-top: 1.2rem;
+	margin-bottom: 1.2rem;
+	border: 1px solid #CCC;
+	border-radius: 8px;
+}
+
+input[type="submit"]{
+	color: #FFF;
+	width: 125px;
+	padding: 1.0rem;
+	margin-top: 1.2rem;
+	margin-bottom: 1.2rem;
+	border: 1px solid #CCC;
+	border-radius: 8px;
+	background: #00008B;
+	border: 0;
+	border: 1px solid blue;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.form_curso{
+	width: 1000px;
+	margin: 4rem auto;
+}
+
+.form_curso > div > h1{
+	font-size: 2rem;
+}
+
+.form_curso > div > input[type="submit"]{
+	width: 150px;
+}
+
+.botao_acao{
+	width: 35px;
+	cursor:pointer;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
