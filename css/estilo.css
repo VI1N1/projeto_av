@@ -4,10 +4,11 @@
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #666;
+	
 }
 
 html{
-
+	background: lightgray;
 	font-size: 62.5%;
 
 }
@@ -24,7 +25,7 @@ h1{
 
 	font-size: 4rem;
 	margin-bottom: 2.5rem;
-	color: #00008B;
+	color: darkcyan;
 }
 
 .agrupamento_login{
@@ -33,10 +34,10 @@ h1{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid #00008B;
+	border: 1px solid darkcyan;
 	padding: 5rem;
 	border-radius: 8px;
-	box-shadow: 0px 1px 10px #00008B;
+	box-shadow: 0px 1px 10px #darkcyan;
 
 
 }
@@ -58,13 +59,6 @@ input[type="text"], input[type="password"]{
 
 }
 
-/*#senha_login{
-
-	width: 150px;
-
-	font-size: 5rem;
-}*/
-
 
 input[type="submit"]{
 
@@ -73,9 +67,9 @@ input[type="submit"]{
 	padding: 1.0rem;
 	margin-top: 1.2rem;
 	margin-bottom: 1.2rem;
-	border: 1px solid #CCC;
+	border: 1px solid darkcyan;
 	border-radius: 8px;
-	background: #00008B;
+	background: darkcyan;
 	border: 0;
 	border: 1px solid blue;
 	border-radius: 8px;
@@ -83,29 +77,12 @@ input[type="submit"]{
 
 }
 
-/*#carga_horaria{
-
-	width: 100px;
-	padding: 1.0rem;
-	margin-top: 1.2rem;
-	margin-bottom: 1.2rem;
-	border: 1px solid #CCC;
-	border-radius: 8px;
-
-	color: #e3178f;
-}*/
-
-
 
 .logo_login{
 	
 	width: 200px;
 
 }
-
-
-
-/* CSS ADMIN */
 
 /* MENU */ 
 
@@ -125,6 +102,7 @@ input[type="submit"]{
 	justify-content: space-between;	
 	align-items: center;
 	padding: 1rem;
+	background: white;
 
 }
 
@@ -138,7 +116,7 @@ input[type="submit"]{
 .barra_topo_n2{
 
 	padding: 0.5rem;
-	background: #00008B;
+	background: darkcyan;
 
 }
 
@@ -185,7 +163,7 @@ input[type="submit"]{
 	position:absolute;
 	top:35px;
 	left:0;
-	background: #00008B;
+	background: darkcyan;
 	display:none;
 	
 }
@@ -209,12 +187,10 @@ input[type="submit"]{
 /* FIM CSS MENU ADMIN*/
 
 
-/* CURSO.PHP */
-
 .form_curso{
 
 	width: 800px;
-	margin: 4rem auto;
+	margin: 0 ;
 
 }
 
@@ -232,7 +208,7 @@ input[type="submit"]{
 
 
 .estila_tabela{
-
+	background: whitesmoke;
 	width: 1000px;
 	margin: 4rem auto;
 
@@ -268,14 +244,16 @@ td{
 
 .agrupamento_curso{
 
+	height: auto;
+    width: 350px;
 	display:flex;
 	flex-direction: column;
 	/*justify-content: left;*/
 	align-items: left;
-	
-	border: 1px solid #069;
+	background: whitesmoke;
+	border: 1px solid darkcyan;
 	padding: 5rem;
-	border-radius: 8px;
+	border-radius: 1px;
 
 
 }

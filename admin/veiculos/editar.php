@@ -3,21 +3,21 @@
 	require('../../conexao.php');
 
 
-	$codigo_curso = $_GET['codigo_curso'];
+	$codigo_veiculo = $_GET['codigo_veiculo'];
 
 
-	$select_curso = mysqli_query($conexao, "SELECT * FROM curso WHERE codigo_curso = $codigo_curso");
+	$select_veiculo = mysqli_query($conexao, "SELECT * FROM veiculo WHERE codigo_veiculo = $codigo_veiculo");
 				
 	
-		if (mysqli_num_rows($select_curso) > 0) {
+		if (mysqli_num_rows($select_veiculo) > 0) {
 			
-			$dados_curso = mysqli_fetch_assoc($select_curso);
+			$dados_veiculo = mysqli_fetch_assoc($select_veiculo);
 			
 		} else {
 			
-			echo "<script> alert ('NÃO EXISTEM CURSOS CADASTRADOS!');</script>";
+			echo "<script> alert ('NÃO EXISTEM VEICULOS CADASTRADOS!');</script>";
 				
-			echo "<script> window.location.href='$url_admin/curso';</script>";
+			echo "<script> window.location.href='$url_admin/veiculos';</script>";
 			
 			
 		}
@@ -28,23 +28,44 @@
 
 		<form id="form_curso" name="form_curso" method="post" action="salvar.php" class="form_curso">
 
-			<div><h1>ATUALIZAR CURSO</h1></div>
+			<div><h1>ATUALIZAR VEICULO</h1></div>
 
 				<div class="agrupamento_curso">
 
 						<div>
 							<div><label>Código</label></div>	
 
-							<div><input type="text" id="codigo_curso" name="codigo_curso" value="<?php echo $dados_curso['codigo_curso'];?>" readonly></div>
+							<div><input type="text" id="codigo_veiculo" name="codigo_veiculo" value="<?php echo $dados_veiculo['codigo_veiculo'];?>" readonly></div>
 
 						</div>
 
 						<div>
-							<div><label>Nome</label></div>	
+							<div><label>Marca</label></div>	
 
-							<div><input type="text" id="nome_curso" name="nome_curso" value="<?php echo $dados_curso['nome_curso'];?>" required autofocus></div>
+							<div><input type="text" id="marca_veiculo" name="marca_veiculo" value="<?php echo $dados_veiculo['marca_veiculo'];?>" required autofocus></div>
 
 						</div>	
+
+						<div>
+							<div><label>Modelo</label></div>	
+
+							<div><input type="text" id="modelo_veiculo" name="modelo_veiculo" value="<?php echo $dados_veiculo['modelo_veiculo'];?>" required autofocus></div>
+
+						</div>
+
+						<div>
+							<div><label>Descrilção</label></div>	
+
+							<div><input type="text" id="descricao_veiculo" name="descricao_veiculo" value="<?php echo $dados_veiculo['descricao_veiculo'];?>" required autofocus></div>
+
+						</div>
+
+						<div>
+							<div><label>Ano</label></div>	
+
+							<div><input type="text" id="ano_veiculo" name="ano_veiculo" value="<?php echo $dados_veiculo['ano_veiculo'];?>" required autofocus></div>
+
+						</div>
 
 				</div>
 

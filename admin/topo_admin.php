@@ -26,7 +26,7 @@
 		unset ($_SESSION['url_admin']);
 		unset ($_SESSION['url_aluno']);
 
-		echo "<script> window.location.href='http://localhost/portal';</script>";				
+		echo "<script> window.location.href='http://localhost/portal_av';</script>";				
 
 	} 
 

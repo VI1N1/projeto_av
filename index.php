@@ -1,3 +1,24 @@
+<?php require('conexao.php');
+
+
+	$select_veiculo = mysqli_query($conexao, "SELECT * FROM veiculo ORDER BY codigo_veiculo ASC");
+				
+	
+		if (mysqli_num_rows($select_veiculo) > 0) {
+			
+			$dados_veiculo = mysqli_fetch_assoc($select_veiculo);
+			
+		} else {
+			
+			echo "<script> alert ('NÃO EXISTEM VEICULOS CADASTRADOS!');</script>";
+				
+			echo "<script> window.location.href='$url_admin/veiculos';</script>";
+			
+			
+		}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -105,56 +126,89 @@
 				<h2>Lista de carros disponiveis</h2>
 			</div>
 			
-			<div class="tabela first">
-				
-				<img src="/portal_av/img/carro1.png" alt="Imagem 1">
+			<?php do{
 
-				<div class="info_tabela">
-					<div class="descricao_vcl">Descrição: </div>
-					<div class="marca_vcl">Marca: </div>
-					<div class="codigo_vcl">Codigo: </div>
-					<div class="modelo_vcl">Modelo: </div>
-					<div class="ano_vcl">Ano: </div>
-				</div>
-
-			</div>
+				?>
 
 			<div class="tabela first">
 				
 				<img src="/portal_av/img/carro1.png" alt="Imagem 1">
 
 				<div class="info_tabela">
-					<div class="descricao_vcl">Descrição: </div>
-					<div class="marca_vcl">Marca: </div>
-					<div class="codigo_vcl">Codigo: </div>
-					<div class="modelo_vcl">Modelo: </div>
-					<div class="ano_vcl">Ano: </div>
+					<div class="descricao_vcl">Descrição: <td><?php echo $dados_veiculo['descricao_veiculo'];?></td></div>
+					<div class="marca_vcl">Marca: <td><?php echo $dados_veiculo['marca_veiculo'];?></td></div>
+					<div class="codigo_vcl">Codigo: <td><?php echo $dados_veiculo['codigo_veiculo'];?></td></div>
+					<div class="modelo_vcl">Modelo: <td><?php echo $dados_veiculo['modelo_veiculo'];?></td></div>
+					<div class="ano_vcl">Ano: <td><?php echo $dados_veiculo['ano_veiculo'];?></td></div>
 				</div>
 
 			</div>
 
-			<div class="tabela first">
-				
-				<img src="/portal_av/img/carro1.png" alt="Imagem 1">
-
-				<div class="info_tabela">
-					<div class="descricao_vcl">Descrição: </div>
-					<div class="marca_vcl">Marca: </div>
-					<div class="codigo_vcl">Codigo: </div>
-					<div class="modelo_vcl">Modelo: </div>
-					<div class="ano_vcl">Ano: </div>
-				</div>
-
-			</div>
-
-
-			
+			<?php }while ($dados_veiculo = mysqli_fetch_assoc($select_veiculo));?>
 
 		</div>
 
 	</div>
 
-	<div class="pezinho"></div>
+	<footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> programa de afiliados</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Transporte</a></li>
+                        <li><a href="#">devoluções</a></li>
+                        <li><a href="#">Status De Pedido</a></li>
+                        <li><a href="#">Opções De Pagamento</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Loja online</h4>
+                    <ul>
+                        <li><a href="#">Relógio</a></li>
+                        <li><a href="#">Saco</a></li>
+                        <li><a href="#">Calçado</a></li>
+                        <li><a href="#">Endereço</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Se subescreva!</h4>
+                    <div class="form-sub">
+                        <form>
+                            <input type="email" placeholder="Digite o seu e-mail" required>
+                            <button>subscrever</button>
+                        </form>
+                    </div>
+
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
 
 	<script src="/portal_av/script.js"></script>
 
