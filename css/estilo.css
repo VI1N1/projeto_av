@@ -101,7 +101,7 @@ input[type="submit"]{
 	flex-direction: row;
 	justify-content: space-between;	
 	align-items: center;
-	padding: 1rem;
+	padding: 0rem 5rem;
 	background: white;
 
 }
@@ -187,20 +187,20 @@ input[type="submit"]{
 /* FIM CSS MENU ADMIN*/
 
 
-.form_curso{
+.form_veiculo{
 
 	width: 800px;
 	margin: 0 ;
 
 }
 
-.form_curso > div > h1{
+.form_veiculo > div > h1{
 
 	font-size: 2rem;
 
 }
 
-.form_curso > div > input[type="submit"]{
+.form_veiculo > div > input[type="submit"]{
 
 	width: 150px;
 
@@ -211,12 +211,15 @@ input[type="submit"]{
 	background: whitesmoke;
 	width: 1000px;
 	margin: 4rem auto;
+	padding: 50px;
 
 }
 
 .estila_tabela > div > h1{
 
-	font-size: 2rem;
+	font-size: 3rem;
+    display: flex;
+    justify-content: center
 
 }
 
@@ -242,7 +245,7 @@ td{
 	
 }
 
-.agrupamento_curso{
+.agrupamento_veiculo{
 
 	height: auto;
     width: 350px;

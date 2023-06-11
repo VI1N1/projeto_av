@@ -19,7 +19,7 @@
 
 		$_SESSION['url'] = $url;
 		$_SESSION['url_admin'] = $url_admin;
-		$_SESSION['url_aluno'] = $url_aluno;
+		$_SESSION['url_usuario'] = $url_usuario;
 
 		if ($_SESSION['tipo_login'] == 0 ){
 
@@ -27,7 +27,7 @@
 
 		}
 		else{
-			echo"<script> window.location.href='$url_aluno';</script>";
+			echo"<script> window.location.href='$url_usuario';</script>";
 		}
 		
 	}

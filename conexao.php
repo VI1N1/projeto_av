@@ -15,7 +15,7 @@
 
 	$url_admin = "http://".$host_ip."/portal_av/admin";
 
-	$url_aluno = "http://".$host_ip."/portal_av/aluno";
+	$url_usuario = "http://".$host_ip."/portal_av/index2.php";
 
 
 ?>

@@ -26,6 +26,13 @@ body{
     position: initial;
 }
 
+.form_cadastro{
+    width: auto;
+    height: 100%;
+    margin-left: auto;
+    position: initial;
+}
+
 h1{
 	font-size: 4rem;
 	padding-top: 2rem;
@@ -127,6 +134,12 @@ input[type="submit"]{
 	.capa_login{
     	width: 100%;   	
 	}
+    .form_cadastro{
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
 
 
 }

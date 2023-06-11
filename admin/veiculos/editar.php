@@ -26,11 +26,11 @@
 ?>
 
 
-		<form id="form_curso" name="form_curso" method="post" action="salvar.php" class="form_curso">
+		<form id="form_veiculo" name="form_veiculo" method="post" action="salvar.php" class="form_veiculo">
 
 			<div><h1>ATUALIZAR VEICULO</h1></div>
 
-				<div class="agrupamento_curso">
+				<div class="agrupamento_veiculo">
 
 						<div>
 							<div><label>Código</label></div>	
